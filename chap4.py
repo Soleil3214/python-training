@@ -20,7 +20,7 @@ img3 = ImageTk.PhotoImage(Image.open('img4/chap4-1-3.png').convert('RGB'))
 
 
 #キャンバス作成
-canvas = tkinter.Canvas(root, width=640, height= 480)
+canvas = tkinter.Canvas(root, width=640, height=480)
 canvas.place(x=0, y=0)
 canvas.create_image(320, 220, image=img1, tag="illust")
 
@@ -57,7 +57,7 @@ def btn_click():
 
         
 #ボタンクリックイベントとの関連付け
-    button["command"] = btn_click
+button["command"] = btn_click
 
 
 root.mainloop()
