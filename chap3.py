@@ -2,7 +2,7 @@ import tkinter
 from PIL import Image, ImageTk
 
 root = tkinter.Tk()
-root.title("マジカルわあくす")
+root.title("マジカル計算")
 root.minsize(640, 480)
 root.option_add("*font", ["MS Pゴシック", 22])
 
