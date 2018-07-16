@@ -25,30 +25,18 @@ def check_move(x, y):
 #push buttons up
 def click_button_up():
     check_move(brave_x, brave_y-1)
-    global brave_y
-    brave_y = brave_y - 1
-    canvas.coords("brave", brave_x*62+31, brave_y*62+31)
 
 #push buttons down
 def click_button_down():
     check_move(brave_x, brave_y+1)
-    global brave_y
-    brave_y = brave_y + 1
-    canvas.coords("brave", brave_x*62+31, brave_y*62+31)
 
 #push buttons left
 def click_button_left():
     check_move(brave_x-1, brave_y)
-    global brave_x
-    brave_x = brave_x - 1
-    canvas.coords("brave", brave_x*62+31, brave_y*62+31)
 
 #push buttons right
 def click_button_right():
     check_move(brave_x+1, brave_y)
-    global brave_x
-    brave_x = brave_x + 1
-    canvas.coords("brave", brave_x*62+31, brave_y*62+31)
 
 
 #window
