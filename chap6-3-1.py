@@ -12,11 +12,21 @@ def draw_map():
 
 #check the destination
 def check_move(x, y):
-    global brave_x, brave_y
+    global brave_x, brave_y, flag_key
     if x>=0 and x<MAX_WIDTH and y>=0 and y<MAX_HEIGHT:
         p = map_data[y][x]
         if p == 1:
             return
+        elif p == 3:
+            flag_key == True
+            map_data[y][x] = 0
+            canvas.delete("all")
+            draw_map()
+        elif p == 2:
+            if flag_key == True:
+                ending()
+            else:
+                return
         brave_x = x
         brave_y = y
         canvas.coords("brave", brave_x*62+31, brave_y*62+31)
@@ -38,6 +48,13 @@ def click_button_left():
 def click_button_right():
     check_move(brave_x+1, brave_y)
 
+#display the ending
+def ending():
+    canvas.delete("all")
+    canvas.create_rectangle(0, 0, 620, 434, fill="black")
+    canvas.create_text(300, 200, fill="white", font=("MS ゴシック", 15), text="""ゴールおめでとう。
+    だが君の戦いはまだ始まったばかりだ。
+    ・・・・つづく？""")
 
 #window
 root = tkinter.Tk()
