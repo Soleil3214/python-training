@@ -107,6 +107,7 @@ brave_y = 0
 #flag key
 flag_key = False
 
+#option
 
 
 draw_map()
