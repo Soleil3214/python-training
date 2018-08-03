@@ -56,6 +56,8 @@ def ending():
     だが君の戦いはまだ始まったばかりだ。
     ・・・・つづく？""")
 
+#comment
+
     #invalidate button
     button_up["state"] = "disabled"
     button_down["state"] = "disabled"
