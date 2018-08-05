@@ -15,3 +15,6 @@ class FightManager:
         losebutton.place(x=320, y=340)
         #hide
         self.dialog.place_forget()
+    #start to battle
+    def fight_start(self, map_data, x, y):
+        self.dialog.place(x=10, y=10)
