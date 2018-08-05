@@ -34,7 +34,8 @@ def check_move(x, y):
             fightmanager.fight_start(map_data, x, y)
         brave_x = x
         brave_y = y
-        canvas.coords("brave", brave_x*62+31, brave_y*62+31)
+        draw_map()
+        #canvas.coords("brave", brave_x*62+31, brave_y*62+31)
 
 
 #push buttons up
@@ -119,6 +120,8 @@ map_data = [[1, 0, 1, 1, 1, 1, 1, 1, 1, 1],
 #position of brave
 brave_x = 1
 brave_y = 0
+brave = chap7fight.Brave()
+print(brave.get_atk())
 
 #flag key
 flag_key = False
