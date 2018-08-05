@@ -1,5 +1,6 @@
 import tkinter
 from PIL import Image, ImageTk
+import chap7fight
 
 #drawingmap
 def draw_map():
@@ -116,9 +117,8 @@ brave_y = 0
 #flag key
 flag_key = False
 
-#option
-
+#preparation for battle
+fightmanager = chap7fight.FightManager()
 
 draw_map()
 root.mainloop()
-
