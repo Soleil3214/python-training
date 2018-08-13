@@ -40,11 +40,19 @@ class FightManager:
     #base class
     class Character:
         #constructor
-        def __init__(self):
-            
+        def __new__(cls):
+            obj = super().__new__(cls)
+            obj.rsv = 1
+            return obj
+        #charge attack
+        def reserve(self):
+            self.rsv = self.rsv + 1
+
         #attack
         def get_atk(self):
-            return random.randint(1, self.atk)
+            r = self.rsv
+            self.rsv = 1
+            return random.randint(1, self.atk * r)
         #defence
         def get_dfs(self):
             return random.randint(1, self.dfs)
