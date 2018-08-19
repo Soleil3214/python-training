@@ -90,3 +90,10 @@ class FightManager:
                 self.atk = 8
                 self.dfs = 5
 
+#Monster　IXI
+        class Monster2(Character):
+            def __init__(self):
+                self.name = "オルタンシア"
+                self.hp = 1000
+                self.atk = 8000
+                self.dfs = 14514
