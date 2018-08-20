@@ -105,3 +105,11 @@ class FightManager:
                 self.hp = 3000
                 self.atk = 700
                 self.dfs = 15000
+
+#Monster　XIⅡ
+        class MonsterXIⅡ(Character):
+            def __init__(self):
+                self.name = "グロスメギナ"
+                self.hp = 18000
+                self.atk = 9000
+                self.dfs = 9000
