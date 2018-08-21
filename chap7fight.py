@@ -112,4 +112,12 @@ class FightManager:
                 self.name = "グロスメギナ"
                 self.hp = 18000
                 self.atk = 9000
-                self.dfs = 9000
+                self.dfs = 11000
+
+#Monster　XIⅢ
+        class MonsterXIⅢ(Character):
+            def __init__(self):
+                self.name = "アル・エンプレス"
+                self.hp = 0
+                self.atk = 5000
+                self.dfs = 100
