@@ -121,3 +121,11 @@ class FightManager:
                 self.hp = 0
                 self.atk = 5000
                 self.dfs = 100
+
+#Monster　0
+        class Monster0(Character):
+            def __init__(self):
+                self.name = "0・エンプレス"
+                self.hp = 0
+                self.atk = 0
+                self.dfs = 0
